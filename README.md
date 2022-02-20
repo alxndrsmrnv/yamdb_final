@@ -22,6 +22,7 @@ POSTGRES_USER=admin
 POSTGRES_PASSWORD=admin      
 DB_HOST=db
 DB_PORT=5432
+HOST=0:8000
 ```
 
 ## Docker
