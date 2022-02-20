@@ -10,7 +10,6 @@ services:
     image: alxndrsmrnv/workflowtest:0.1
     restart: always
     volumes:
-      - ../:/app/
       - static_value:/app/static/
       - media_value:/app/media/
     depends_on:
