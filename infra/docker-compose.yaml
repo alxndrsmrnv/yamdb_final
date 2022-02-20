@@ -7,7 +7,7 @@ services:
     env_file:
       - ./.env
   web:
-    image: alxndrsmrnv/yamdb_final:latest
+    image: alxndrsmrnv/workflowtest:0.1
     restart: always
     volumes:
       - ../:/app/
