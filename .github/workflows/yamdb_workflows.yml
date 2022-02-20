@@ -41,8 +41,9 @@ jobs:
       - name: Push to Docker Hub
         uses: docker/build-push-action@v2
         with:
+          context: ./api_yamdb/
           push: true
-          tags: alxndrsmrnv/workflowtest:0.1
+          tags: ${{ secrets.DOCKER_USERNAME }}/workflowtest:0.1
   deploy:
     runs-on: ubuntu-latest
     needs: build_and_push_to_docker_hub
