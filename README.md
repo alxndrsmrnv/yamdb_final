@@ -32,4 +32,4 @@ Then makemigrations: `docker-compose exec web python manage.py migrate`
 ## Author
 Alexander Smirnov https://github.com/alxndrsmrnv
 
-![example workflow](https://github.com/alxndrsmrnv/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
+![example workflow](https://github.com/alxndrsmrnv/yamdb_final/actions/workflows/yamdb_workflow.yaml/badge.svg)
