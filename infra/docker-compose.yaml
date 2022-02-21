@@ -5,11 +5,11 @@ services:
     volumes:
       - /var/lib/postgresql/data/
     env_file:
-      - ./.env
+      - .env
   web:
     build:
       context: ..
-      dockerfile: api_yamdb/Dockerfile
+      dockerfile: ../api_yamdb/Dockerfile
     image: alxndrsmrnv/api_final:1.0
     restart: always
     volumes:
