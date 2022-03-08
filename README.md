@@ -12,7 +12,7 @@ This API can help to store films by genre, categories, leave comments, make revi
 
 ## Installation
 
-api_yamdb requires Python 3.7 to run.
+api_yamdb requires Python 3.7 and Docker to run. Docker install guide https://docs.docker.com/engine/install/ubuntu/
 
 You need to create .env file. Example below.
 ```sh
@@ -34,3 +34,5 @@ Then makemigrations: `docker-compose exec web python manage.py migrate`
 Alexander Smirnov https://github.com/alxndrsmrnv
 
 ![example workflow](https://github.com/alxndrsmrnv/yamdb_final/actions/workflows/yamdb_workflow.yaml/badge.svg)
+
+Project http://130.193.51.225/
