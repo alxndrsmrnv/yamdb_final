@@ -28,9 +28,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: tests
     if: github.ref == 'refs/heads/master'
-    steps:
-      - name: cancel deploy not master branch
-        run: exit 0
+    run: exit 0
     steps:
       - name: Check out the repo
         uses: actions/checkout@v2
@@ -51,9 +49,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: build_and_push_to_docker_hub
     if: github.ref == 'refs/heads/master'
-    steps:
-      - name: cancel deploy not master branch
-        run: exit 0
+    run: exit 0
     steps:
       - name: executing remote ssh commands to deploy
         uses: appleboy/ssh-action@master
@@ -80,6 +76,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: deploy
     if: github.ref == 'refs/heads/master'
+    run: exit 0
     steps:
     - name: send message
       uses: appleboy/telegram-action@master
