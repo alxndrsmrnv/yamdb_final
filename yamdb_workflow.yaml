@@ -23,11 +23,10 @@ jobs:
       run: |
         pytest
 
-on:
-  push:
-    branches:
-      - 'main'
-      - 'master'
+on: [push
+      branches:
+        - 'main'
+        - 'master']
 
 jobs:
   build_and_push_to_docker_hub:
